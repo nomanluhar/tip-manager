@@ -75,13 +75,13 @@ Replace your_jwt_secret with a strong secret key and mongodb://localhost:27017/t
 
     POST /api/tip/calculate
 
-    Description: Calculate and store a tip.
-    Body: application/json
-        {
-            "place": "Hotel Marriot",
-            "totalAmount": 1000,
-            "tipPercentage": 15
-        }
+        Description: Calculate and store a tip.
+            Body: application/json
+            {
+                "place": "Hotel Marriot",
+                "totalAmount": 1000,
+                "tipPercentage": 15
+            }
 
     GET /api/tip
 
