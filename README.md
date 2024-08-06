@@ -32,3 +32,16 @@ Before you begin, ensure you have met the following requirements:
 
     ```bash
     npm install
+
+## Environment Variables
+
+    ```bash
+    # JWT Secret for signing tokens
+    JWT_SECRET=your_jwt_secret
+
+    # MongoDB URI
+    MONGODB_URI=mongodb://localhost:27017/tipmanager
+
+    # Port on which the server will run
+    PORT=5000
+
