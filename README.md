@@ -53,34 +53,40 @@ Replace your_jwt_secret with a strong secret key and mongodb://localhost:27017/t
 
     POST /api/user/signup
 
-        Description: Create a new user and upload a profile picture.
-            Body: multipart/form-data
-            name: User's name
-            email: User's email address
-            password: User's password
-            proPic: Profile picture (file)
+    Description: Create a new user and upload a profile picture.
+    Body: multipart/form-data
+            {
+                name: 'John Doe 
+                email: 'john@example.com'
+                password: 'password123'
+                proPic: 'Profile picture (file)'
+            }
 
     POST /api/user/login
 
-        Description: Log in a user.
-            Body: application/json
-            email: User's email address
-            password: User's password
+    Description: Log in a user.
+    Body: application/json
+            {
+                email: 'john@example.com'
+                password: 'password123'
+            }
 
 2.  Tip Routes
 
     POST /api/tip/calculate
 
-        Description: Calculate and store a tip.
-            Body: application/json
-            place: Place where the tip was given
-            totalAmount: Total amount paid
-            tipPercentage: Percentage of the tip
+    Description: Calculate and store a tip.
+    Body: application/json
+            {
+                "place": "Hotel Marriot",
+                "totalAmount": 1000,
+                "tipPercentage": 15
+            }
 
     GET /api/tip
 
-        Description: Retrieve tip records within a date range.
-            Query Parameters:
+    Description: Retrieve tip records within a date range.
+    Query Parameters:
             startDate: Start date (format: mm-dd-yyyy)
             endDate: End date (format: mm-dd-yyyy)
 
