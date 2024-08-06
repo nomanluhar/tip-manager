@@ -53,14 +53,14 @@ Replace your_jwt_secret with a strong secret key and mongodb://localhost:27017/t
 
     POST /api/user/signup
 
-    Description: Create a new user and upload a profile picture.
-        Body: multipart/form-data
-        {
-            name: 'John Doe 
-            email: 'john@example.com'
-            password: 'password123'
-            proPic: 'Profile picture (file)'
-        }
+        Description: Create a new user and upload a profile picture.
+            Body: multipart/form-data
+            {
+                name: 'John Doe 
+                email: 'john@example.com'
+                password: 'password123'
+                proPic: 'Profile picture (file)'
+            }
 
     POST /api/user/login
 
