@@ -66,10 +66,10 @@ Replace your_jwt_secret with a strong secret key and mongodb://localhost:27017/t
 
     Description: Log in a user.
     Body: application/json
-            {
-                email: 'john@example.com'
-                password: 'password123'
-            }
+        {
+            email: 'john@example.com'
+            password: 'password123'
+        }
 
 2.  Tip Routes
 
@@ -77,18 +77,18 @@ Replace your_jwt_secret with a strong secret key and mongodb://localhost:27017/t
 
     Description: Calculate and store a tip.
     Body: application/json
-            {
-                "place": "Hotel Marriot",
-                "totalAmount": 1000,
-                "tipPercentage": 15
-            }
+        {
+            "place": "Hotel Marriot",
+            "totalAmount": 1000,
+            "tipPercentage": 15
+        }
 
     GET /api/tip
 
     Description: Retrieve tip records within a date range.
     Query Parameters:
-            startDate: Start date (format: mm-dd-yyyy)
-            endDate: End date (format: mm-dd-yyyy)
+        startDate: Start date (format: mm-dd-yyyy)
+        endDate: End date (format: mm-dd-yyyy)
 
 ## Running the Application
 
